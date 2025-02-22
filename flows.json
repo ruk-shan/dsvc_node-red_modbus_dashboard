@@ -1,0 +1,4692 @@
+[
+    {
+        "id": "ed72d2a50405121d",
+        "type": "tab",
+        "label": "ping devices",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7802c50f7769b379",
+        "type": "tab",
+        "label": "MIR -01 missions ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1294d8dff57285a9",
+        "type": "tab",
+        "label": "MiR_02 missions",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c0655787daca4298",
+        "type": "tab",
+        "label": "UR10 LOAD/UNLOAD",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "876c68a5a69708eb",
+        "type": "tab",
+        "label": "UR5 LOAD/UNLOAD",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "328675f894aa8a1a",
+        "type": "tab",
+        "label": "MiR01_monitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "be7849be052090a1",
+        "type": "tab",
+        "label": "UR10 - misstion triggers",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "31f4592eec7b83a9",
+        "type": "tab",
+        "label": "MiR_02 Modbus Reg",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f61fd2cc3bb17a4f",
+        "type": "tab",
+        "label": "UR5 - misstion triggers",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e5ec0dd13ebf04ca",
+        "type": "tab",
+        "label": "System Owerite",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5c0316a5fa0522f2",
+        "type": "tab",
+        "label": "battery ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5a18dadc5d831c80",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true
+    },
+    {
+        "id": "8fc2ad22bc826627",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#57e389",
+            "bgPage": "#3d3846",
+            "groupBg": "#5e5c64",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "8px",
+            "groupGap": "8px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "8px"
+        }
+    },
+    {
+        "id": "30d4d2afa1eea34b",
+        "type": "ui-page",
+        "name": "System Triggers",
+        "ui": "5a18dadc5d831c80",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "8fc2ad22bc826627",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "1dfae768e770aa89",
+        "type": "ui-group",
+        "name": "Connectivity",
+        "page": "30d4d2afa1eea34b",
+        "width": "13",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "181b98329d00259d",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "172.16.179.129",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "5eb5565db599c46b",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "192.168.68.54",
+        "tcpPort": 502,
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": 9600,
+        "serialDatabits": 8,
+        "serialStopbits": 1,
+        "serialParity": "none",
+        "serialConnectionDelay": 100,
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": 1,
+        "commandDelay": 1,
+        "clientTimeout": 1000,
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": 2000,
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "e5408164742533d8",
+        "type": "ui-group",
+        "name": "MiR_01 Missions",
+        "page": "30d4d2afa1eea34b",
+        "width": "3",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "25672431649eb2da",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8e26c0e74f6a2fdf",
+        "type": "ui_group",
+        "name": " Dashboard",
+        "tab": "25672431649eb2da",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fac0e0521b1758ea",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e6f70ec7afc33bb5",
+        "type": "ui-group",
+        "name": "MiR_02 Missions",
+        "page": "30d4d2afa1eea34b",
+        "width": "3",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "36b3d306b43354e5",
+        "type": "ui-group",
+        "name": "UR10 LOAD & UNLOAD",
+        "page": "30d4d2afa1eea34b",
+        "width": "3",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b449631a600f0670",
+        "type": "ui-group",
+        "name": "UR5 LOAD/UNLOAD",
+        "page": "30d4d2afa1eea34b",
+        "width": "3",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "bcaabf7fcfe5244e",
+        "type": "ui-page",
+        "name": "Modbus Monitoring",
+        "ui": "5a18dadc5d831c80",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "8fc2ad22bc826627",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "500",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ba8b0417e44b6fde",
+        "type": "ui-group",
+        "name": "MIR_01 Modbus Reg",
+        "page": "bcaabf7fcfe5244e",
+        "width": "3",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "353f27bed9fe70b4",
+        "type": "ui-group",
+        "name": "MiR_02 Modbus Reg",
+        "page": "bcaabf7fcfe5244e",
+        "width": "3",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "84886b3a388e29f3",
+        "type": "ui-group",
+        "name": "UR10 Modbus Reg",
+        "page": "bcaabf7fcfe5244e",
+        "width": "3",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b35a0a3a1b43be62",
+        "type": "ui-group",
+        "name": "UR5 Modbus Reg",
+        "page": "bcaabf7fcfe5244e",
+        "width": "3",
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3d0d63507a041d83",
+        "type": "ui-theme",
+        "name": "Theme 2",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#57e389",
+            "bgPage": "#3d3846",
+            "groupBg": "#5e5c64",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "8px",
+            "groupGap": "8px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "8px"
+        }
+    },
+    {
+        "id": "055645956ca39181",
+        "type": "ping",
+        "z": "ed72d2a50405121d",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "Ping MIR-01",
+        "host": "192.168.68.117",
+        "timer": "1",
+        "inputs": 0,
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "ee85ffc19bc0d1d6"
+            ]
+        ]
+    },
+    {
+        "id": "18d20144e7e8679f",
+        "type": "debug",
+        "z": "ed72d2a50405121d",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ee85ffc19bc0d1d6",
+        "type": "function",
+        "z": "ed72d2a50405121d",
+        "name": "function 1",
+        "func": "if (msg.payload> 0) {\n  msg.payload = true;\n} else {\n  msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "18d20144e7e8679f",
+                "97d5b8fd8a2805c8"
+            ]
+        ]
+    },
+    {
+        "id": "97d5b8fd8a2805c8",
+        "type": "ui-led",
+        "z": "ed72d2a50405121d",
+        "name": "MiR_01 - Ping",
+        "group": "1dfae768e770aa89",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "label": "MiR_01 - Ping",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-end",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 520,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b42bb153f48ec2b4",
+        "type": "ping",
+        "z": "ed72d2a50405121d",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "Ping MIR-02",
+        "host": "192.168.68.117",
+        "timer": "1",
+        "inputs": 0,
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "610f40940880c766"
+            ]
+        ]
+    },
+    {
+        "id": "61ab29f98a5325c6",
+        "type": "debug",
+        "z": "ed72d2a50405121d",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "610f40940880c766",
+        "type": "function",
+        "z": "ed72d2a50405121d",
+        "name": "function 2",
+        "func": "if (msg.payload> 0) {\n  msg.payload = true;\n} else {\n  msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "61ab29f98a5325c6",
+                "9c50af92711ed4c1"
+            ]
+        ]
+    },
+    {
+        "id": "9c50af92711ed4c1",
+        "type": "ui-led",
+        "z": "ed72d2a50405121d",
+        "name": "MiR_02 - Ping",
+        "group": "1dfae768e770aa89",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "label": "MiR_02 - Ping",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-end",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 520,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "94a39e8c1e57785c",
+        "type": "ping",
+        "z": "ed72d2a50405121d",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "Ping UR10",
+        "host": "192.168.68.117",
+        "timer": "1",
+        "inputs": 0,
+        "x": 140,
+        "y": 500,
+        "wires": [
+            [
+                "8b49e99c861e2e2e"
+            ]
+        ]
+    },
+    {
+        "id": "4fc4ae2ba774cab7",
+        "type": "debug",
+        "z": "ed72d2a50405121d",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8b49e99c861e2e2e",
+        "type": "function",
+        "z": "ed72d2a50405121d",
+        "name": "function 3",
+        "func": "if (msg.payload> 0) {\n  msg.payload = true;\n} else {\n  msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "4fc4ae2ba774cab7",
+                "5c210678d215a67e"
+            ]
+        ]
+    },
+    {
+        "id": "5c210678d215a67e",
+        "type": "ui-led",
+        "z": "ed72d2a50405121d",
+        "name": "UR10 - Ping",
+        "group": "1dfae768e770aa89",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "label": "UR10 - Ping",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-end",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 510,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f23ae8c9d23ee6a9",
+        "type": "ping",
+        "z": "ed72d2a50405121d",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "Ping UR5",
+        "host": "192.168.68.117",
+        "timer": "1",
+        "inputs": 0,
+        "x": 140,
+        "y": 640,
+        "wires": [
+            [
+                "da849901d9710369"
+            ]
+        ]
+    },
+    {
+        "id": "6fb460fed522380f",
+        "type": "debug",
+        "z": "ed72d2a50405121d",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "da849901d9710369",
+        "type": "function",
+        "z": "ed72d2a50405121d",
+        "name": "function 4",
+        "func": "if (msg.payload> 0) {\n  msg.payload = true;\n} else {\n  msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "6fb460fed522380f",
+                "dd13f63c61ccbfce"
+            ]
+        ]
+    },
+    {
+        "id": "dd13f63c61ccbfce",
+        "type": "ui-led",
+        "z": "ed72d2a50405121d",
+        "name": "UR5 - Ping",
+        "group": "1dfae768e770aa89",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "label": "UR5 - Ping",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-end",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 510,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f33e768d557c82a8",
+        "type": "ping",
+        "z": "ed72d2a50405121d",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "Main PC",
+        "host": "192.168.68.117",
+        "timer": "1",
+        "inputs": 0,
+        "x": 140,
+        "y": 780,
+        "wires": [
+            [
+                "41b75097c3f41920"
+            ]
+        ]
+    },
+    {
+        "id": "6e4143d575b75760",
+        "type": "debug",
+        "z": "ed72d2a50405121d",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "41b75097c3f41920",
+        "type": "function",
+        "z": "ed72d2a50405121d",
+        "name": "function 5",
+        "func": "if (msg.payload> 0) {\n  msg.payload = true;\n} else {\n  msg.payload = false;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 780,
+        "wires": [
+            [
+                "6e4143d575b75760",
+                "6843e7764769f5cd"
+            ]
+        ]
+    },
+    {
+        "id": "6843e7764769f5cd",
+        "type": "ui-led",
+        "z": "ed72d2a50405121d",
+        "name": "Main PC - Ping",
+        "group": "1dfae768e770aa89",
+        "order": 7,
+        "width": "2",
+        "height": "1",
+        "label": "Main PC - Ping",
+        "labelPlacement": "left",
+        "labelAlignment": "flex-end",
+        "states": [
+            {
+                "value": "false",
+                "valueType": "bool",
+                "color": "#ff0000"
+            },
+            {
+                "value": "true",
+                "valueType": "bool",
+                "color": "#00ff00"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showBorder": true,
+        "showGlow": true,
+        "x": 520,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "6487c53457e884e4",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "98a31b516c445390",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "f480ec09ba15dc77"
+            ]
+        ]
+    },
+    {
+        "id": "f480ec09ba15dc77",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 320,
+        "wires": [
+            [
+                "6487c53457e884e4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "de09b64e3a58ee4e",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 700,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "78b4643aed5c226e",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "DOCK @ PART_TABLE",
+        "label": "DOCK @ PART_TABLE",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "98a31b516c445390"
+            ]
+        ]
+    },
+    {
+        "id": "a0f14697ba8c10be",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "8d1e2ca69fbd5c5a",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "cbf7bcf0f42514a5"
+            ]
+        ]
+    },
+    {
+        "id": "cbf7bcf0f42514a5",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "a0f14697ba8c10be"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dd759cf521041b45",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 680,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "339a8867fb1deabf",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "UNDOCK @ PART_TABLE",
+        "label": "UNDOCK @ PART_TABLE",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "8d1e2ca69fbd5c5a"
+            ]
+        ]
+    },
+    {
+        "id": "596b9e448c3710c9",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "760bc8b6e676665a",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 500,
+        "wires": [
+            [
+                "f2d84aab8b5bb4f5"
+            ]
+        ]
+    },
+    {
+        "id": "f2d84aab8b5bb4f5",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 500,
+        "wires": [
+            [
+                "596b9e448c3710c9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "16caba17ecd0b280",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "DOCK @ HAAS_CNC",
+        "label": "DOCK @ HAAS_CNC",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "760bc8b6e676665a"
+            ]
+        ]
+    },
+    {
+        "id": "4c0a2adba1ea99f1",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 680,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6c2bf61293181d1a",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ab4f3efef05401dd",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 580,
+        "wires": [
+            [
+                "7b890580d9fc319a"
+            ]
+        ]
+    },
+    {
+        "id": "7b890580d9fc319a",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 580,
+        "wires": [
+            [
+                "6c2bf61293181d1a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e3a07688d998e89e",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "UNDOCK @ HAAS_CNC",
+        "label": "UNDOCK @ HAAS_CNC",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "ab4f3efef05401dd"
+            ]
+        ]
+    },
+    {
+        "id": "5f2330c4e6db551c",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 680,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "87b75667e07715b9",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "904392cff8ac44e6",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "2c920707426b9f98"
+            ]
+        ]
+    },
+    {
+        "id": "2c920707426b9f98",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 680,
+        "wires": [
+            [
+                "87b75667e07715b9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1ad30c067df6d7f3",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "DOCK @ ROBOT_CELL",
+        "label": "DOCK @ ROBOT_CELL",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            [
+                "904392cff8ac44e6"
+            ]
+        ]
+    },
+    {
+        "id": "3decd7b849f5061d",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 680,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "47c5e24715bbeaac",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "a743980fe6ddf832",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 780,
+        "wires": [
+            [
+                "65bb2d3bdb340730"
+            ]
+        ]
+    },
+    {
+        "id": "65bb2d3bdb340730",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 780,
+        "wires": [
+            [
+                "47c5e24715bbeaac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a5f9ba13e0690132",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "UNDOCK @ ROBOT_CELL",
+        "label": "UNDOCK @ ROBOT_CELL",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 780,
+        "wires": [
+            [
+                "a743980fe6ddf832"
+            ]
+        ]
+    },
+    {
+        "id": "923b652a15dcb024",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 680,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "3fc14692284f497a",
+        "type": "debug",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "913fc8146fad8165",
+        "type": "function",
+        "z": "7802c50f7769b379",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 880,
+        "wires": [
+            [
+                "7d56bf403d915e7a"
+            ]
+        ]
+    },
+    {
+        "id": "7d56bf403d915e7a",
+        "type": "modbus-write",
+        "z": "7802c50f7769b379",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 880,
+        "wires": [
+            [
+                "3fc14692284f497a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "906b9beb6a4f387e",
+        "type": "ui-button",
+        "z": "7802c50f7769b379",
+        "group": "e5408164742533d8",
+        "name": "Go to Charger",
+        "label": "Go to Charger",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "913fc8146fad8165"
+            ]
+        ]
+    },
+    {
+        "id": "4ec5f124e4ac6e14",
+        "type": "comment",
+        "z": "7802c50f7769b379",
+        "name": "check ip of MIR_01, Register",
+        "info": "",
+        "x": 680,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "1137bf571206eb17",
+        "type": "debug",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "099ae8ca2d2f9b83",
+        "type": "function",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "194b9d191cbdeaa6"
+            ]
+        ]
+    },
+    {
+        "id": "194b9d191cbdeaa6",
+        "type": "modbus-write",
+        "z": "1294d8dff57285a9",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 650,
+        "y": 140,
+        "wires": [
+            [
+                "1137bf571206eb17"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c36f090c4d93d624",
+        "type": "comment",
+        "z": "1294d8dff57285a9",
+        "name": "check ip of MIR_02, Register",
+        "info": "",
+        "x": 680,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6d6b752e5d52ea82",
+        "type": "ui-button",
+        "z": "1294d8dff57285a9",
+        "group": "e6f70ec7afc33bb5",
+        "name": "DOCK @ CMM_STATION ",
+        "label": "DOCK @ CMM_STATION ",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "099ae8ca2d2f9b83"
+            ]
+        ]
+    },
+    {
+        "id": "492be870bc35b376",
+        "type": "debug",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e9cf572ad215456d",
+        "type": "function",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "d44f30a443d60308"
+            ]
+        ]
+    },
+    {
+        "id": "d44f30a443d60308",
+        "type": "modbus-write",
+        "z": "1294d8dff57285a9",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [
+                "492be870bc35b376"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "defe7578cbd926b7",
+        "type": "comment",
+        "z": "1294d8dff57285a9",
+        "name": "check ip of MIR_02, Register",
+        "info": "",
+        "x": 660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d3b880cac553d58a",
+        "type": "ui-button",
+        "z": "1294d8dff57285a9",
+        "group": "e6f70ec7afc33bb5",
+        "name": "UNDOCK @ CMM_STATION ",
+        "label": "UNDOCK @ CMM_STATION ",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "e9cf572ad215456d"
+            ]
+        ]
+    },
+    {
+        "id": "b00e9d00fbb7fe4e",
+        "type": "debug",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9f9adbb9e23108c7",
+        "type": "function",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "41c2e8216155d3a2"
+            ]
+        ]
+    },
+    {
+        "id": "41c2e8216155d3a2",
+        "type": "modbus-write",
+        "z": "1294d8dff57285a9",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "b00e9d00fbb7fe4e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3b2c41561d378318",
+        "type": "ui-button",
+        "z": "1294d8dff57285a9",
+        "group": "e6f70ec7afc33bb5",
+        "name": "DOCK @ ROBOT_CELL",
+        "label": "DOCK @ ROBOT_CELL",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "9f9adbb9e23108c7"
+            ]
+        ]
+    },
+    {
+        "id": "461ab90bc84f9554",
+        "type": "comment",
+        "z": "1294d8dff57285a9",
+        "name": "check ip of MIR_02, Register",
+        "info": "",
+        "x": 660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "45a5b711c550d8cd",
+        "type": "debug",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4bf90606196b1486",
+        "type": "function",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "5172e6e5ca9b64af"
+            ]
+        ]
+    },
+    {
+        "id": "5172e6e5ca9b64af",
+        "type": "modbus-write",
+        "z": "1294d8dff57285a9",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "45a5b711c550d8cd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cc72950ea7685ae6",
+        "type": "ui-button",
+        "z": "1294d8dff57285a9",
+        "group": "e6f70ec7afc33bb5",
+        "name": "UNDOCK @ ROBOT_CELL",
+        "label": "UNDOCK @ ROBOT_CELL",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "4bf90606196b1486"
+            ]
+        ]
+    },
+    {
+        "id": "7bca4436e849fe91",
+        "type": "comment",
+        "z": "1294d8dff57285a9",
+        "name": "check ip of MIR_02, Register",
+        "info": "",
+        "x": 660,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2f37f736084e0a15",
+        "type": "debug",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "40c7a7de4ec28c7d",
+        "type": "function",
+        "z": "1294d8dff57285a9",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "9032495d00691fcb"
+            ]
+        ]
+    },
+    {
+        "id": "9032495d00691fcb",
+        "type": "modbus-write",
+        "z": "1294d8dff57285a9",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [
+                "2f37f736084e0a15"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d418e00888eb997a",
+        "type": "ui-button",
+        "z": "1294d8dff57285a9",
+        "group": "e6f70ec7afc33bb5",
+        "name": "Go to Charger",
+        "label": "Go to Charger",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "40c7a7de4ec28c7d"
+            ]
+        ]
+    },
+    {
+        "id": "ac2416b533538032",
+        "type": "comment",
+        "z": "1294d8dff57285a9",
+        "name": "check ip of MIR_02, Register",
+        "info": "",
+        "x": 640,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "ec493ec5360996a8",
+        "type": "debug",
+        "z": "c0655787daca4298",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4414f74e809de299",
+        "type": "function",
+        "z": "c0655787daca4298",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "8a6b7674b8e54191"
+            ]
+        ]
+    },
+    {
+        "id": "8a6b7674b8e54191",
+        "type": "modbus-write",
+        "z": "c0655787daca4298",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "ec493ec5360996a8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b0b188ed23ac2541",
+        "type": "ui-button",
+        "z": "c0655787daca4298",
+        "group": "36b3d306b43354e5",
+        "name": "UNLOAD @ PART_TABLE",
+        "label": "UNLOAD @ PART_TABLE",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1035",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "4414f74e809de299"
+            ]
+        ]
+    },
+    {
+        "id": "03994c205eacaf1c",
+        "type": "ui-button",
+        "z": "c0655787daca4298",
+        "group": "36b3d306b43354e5",
+        "name": "UNLOAD @ HAAS_CNC",
+        "label": "UNLOAD @ HAAS_CNC",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1045",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "4414f74e809de299"
+            ]
+        ]
+    },
+    {
+        "id": "f077605d2300f51b",
+        "type": "ui-button",
+        "z": "c0655787daca4298",
+        "group": "36b3d306b43354e5",
+        "name": "LOAD @ HAAS_CNC",
+        "label": "LOAD @ HAAS_CNC",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1044",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "4414f74e809de299"
+            ]
+        ]
+    },
+    {
+        "id": "da9b871685b9b485",
+        "type": "ui-button",
+        "z": "c0655787daca4298",
+        "group": "36b3d306b43354e5",
+        "name": "UNLOAD @ ROBOT_CELL",
+        "label": "UNLOAD@ ROBOT_CELL",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1065",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "4414f74e809de299"
+            ]
+        ]
+    },
+    {
+        "id": "3add8f8fb581c886",
+        "type": "comment",
+        "z": "c0655787daca4298",
+        "name": "check ip of UR10, Registers",
+        "info": "",
+        "x": 680,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "08785a085f2bc02c",
+        "type": "debug",
+        "z": "876c68a5a69708eb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b7257be016057dfa",
+        "type": "function",
+        "z": "876c68a5a69708eb",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "d9046c002eca70ea"
+            ]
+        ]
+    },
+    {
+        "id": "d9046c002eca70ea",
+        "type": "modbus-write",
+        "z": "876c68a5a69708eb",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "08785a085f2bc02c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "aa491eaca0dc8046",
+        "type": "ui-button",
+        "z": "876c68a5a69708eb",
+        "group": "b449631a600f0670",
+        "name": "LOAD@ CMM",
+        "label": "UNLOAD @ PART_TABLE",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1035",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "b7257be016057dfa"
+            ]
+        ]
+    },
+    {
+        "id": "afd26d57d367a383",
+        "type": "ui-button",
+        "z": "876c68a5a69708eb",
+        "group": "b449631a600f0670",
+        "name": "UNLOAD@ ROBOT_CELL",
+        "label": "UNLOAD@ ROBOT_CELL",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "1065",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "b7257be016057dfa"
+            ]
+        ]
+    },
+    {
+        "id": "94e0ca8391c93a3c",
+        "type": "comment",
+        "z": "876c68a5a69708eb",
+        "name": "check ip of UR10, Registers",
+        "info": "",
+        "x": 680,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c2f5fb64fdbb3274",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "858db8c4c1313d51"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b25971e0fd76f84c",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "c2f5fb64fdbb3274"
+            ]
+        ]
+    },
+    {
+        "id": "858db8c4c1313d51",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "name": "1111 mission_trigger",
+        "label": "1111 mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "x": 700,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c0043ae39fa36124",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "0e2e457b5827e9b6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8505f2b05a71ac34",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "c0043ae39fa36124"
+            ]
+        ]
+    },
+    {
+        "id": "0e2e457b5827e9b6",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "2222  mission_trigger",
+        "label": "2222  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#3584e4",
+        "wrapText": true,
+        "className": "",
+        "x": 700,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c9b0553d700b07c2",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "2b7cb30d282300e8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fb2656ec14b0bfa1",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "c9b0553d700b07c2"
+            ]
+        ]
+    },
+    {
+        "id": "2b7cb30d282300e8",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "3333  mission_trigger",
+        "label": "3333  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 700,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5ec71d2bdaa5ff39",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "dd9c4d8e8ed4a650"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "57a6596ed5f368bf",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "5ec71d2bdaa5ff39"
+            ]
+        ]
+    },
+    {
+        "id": "dd9c4d8e8ed4a650",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "name": "4444  mission_trigger",
+        "label": "4444  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 700,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8437fc1de2d212b1",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "92d56e34253e9500"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f11c46a6a59894df",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "8437fc1de2d212b1"
+            ]
+        ]
+    },
+    {
+        "id": "92d56e34253e9500",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "5555  mission_trigger",
+        "label": "5555  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 700,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "671aa099a92975b3",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "a8becb056026cfde"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "68fad1351ccd5c72",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 300,
+        "wires": [
+            [
+                "671aa099a92975b3"
+            ]
+        ]
+    },
+    {
+        "id": "a8becb056026cfde",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "6666 mission_trigger",
+        "label": "6666 mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 700,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e46831a008e886b1",
+        "type": "modbus-getter",
+        "z": "328675f894aa8a1a",
+        "name": "MiR_01 Status register",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "3dd3a8a12d8a6b97"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b7481dfd7d334383",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 400,
+        "wires": [
+            [
+                "e46831a008e886b1"
+            ]
+        ]
+    },
+    {
+        "id": "3dd3a8a12d8a6b97",
+        "type": "ui-text",
+        "z": "328675f894aa8a1a",
+        "group": "ba8b0417e44b6fde",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Status register:",
+        "label": "Status register:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 680,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2d38a083619eb1b7",
+        "type": "inject",
+        "z": "328675f894aa8a1a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1010",
+        "payloadType": "num",
+        "x": 530,
+        "y": 40,
+        "wires": [
+            [
+                "858db8c4c1313d51",
+                "0e2e457b5827e9b6",
+                "2b7cb30d282300e8",
+                "dd9c4d8e8ed4a650",
+                "92d56e34253e9500",
+                "a8becb056026cfde",
+                "3dd3a8a12d8a6b97"
+            ]
+        ]
+    },
+    {
+        "id": "289ee4747d44e312",
+        "type": "modbus-getter",
+        "z": "be7849be052090a1",
+        "name": "UR10 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "6c3ac9903349f6f0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "27ba4969a3f2ad1f",
+        "type": "inject",
+        "z": "be7849be052090a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "289ee4747d44e312"
+            ]
+        ]
+    },
+    {
+        "id": "6c3ac9903349f6f0",
+        "type": "ui-text",
+        "z": "be7849be052090a1",
+        "group": "84886b3a388e29f3",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "Mission_trigger",
+        "label": "Mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "x": 680,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1473030ba7721dcb",
+        "type": "modbus-getter",
+        "z": "be7849be052090a1",
+        "name": "UR10 Status register",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "259a0accb6946538"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9b34f30bd99f6e42",
+        "type": "inject",
+        "z": "be7849be052090a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "1473030ba7721dcb"
+            ]
+        ]
+    },
+    {
+        "id": "259a0accb6946538",
+        "type": "ui-text",
+        "z": "be7849be052090a1",
+        "group": "84886b3a388e29f3",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Status register:",
+        "label": "Status register:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 700,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "034e6cab187b9543",
+        "type": "inject",
+        "z": "be7849be052090a1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1010",
+        "payloadType": "num",
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "6c3ac9903349f6f0",
+                "259a0accb6946538"
+            ]
+        ]
+    },
+    {
+        "id": "934ac7cd5fce4d18",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "2a425ae33a811159"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2eb44a99f34fff6f",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "934ac7cd5fce4d18"
+            ]
+        ]
+    },
+    {
+        "id": "2a425ae33a811159",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "1111 mission_trigger",
+        "label": "1111 mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "x": 720,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0cdfd480c70993fc",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "a12d7d7629578425"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c4e624163e0e0dd6",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "0cdfd480c70993fc"
+            ]
+        ]
+    },
+    {
+        "id": "a12d7d7629578425",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "2222  mission_trigger",
+        "label": "2222  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#3584e4",
+        "wrapText": true,
+        "className": "",
+        "x": 720,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7b24817909d2a5f0",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "cf2926bc81da04ec"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6e048b5916faa5ff",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "7b24817909d2a5f0"
+            ]
+        ]
+    },
+    {
+        "id": "cf2926bc81da04ec",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "name": "3333  mission_trigger",
+        "label": "3333  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 720,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "af0819fb640716b4",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "3f6c2cef479fe8fa"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "79b7fb584f25df02",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "af0819fb640716b4"
+            ]
+        ]
+    },
+    {
+        "id": "3f6c2cef479fe8fa",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "4444  mission_trigger",
+        "label": "4444  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 720,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7d7db8fb37555190",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "ad51b33a11a07724"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "642701ea9f9d0744",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "7d7db8fb37555190"
+            ]
+        ]
+    },
+    {
+        "id": "ad51b33a11a07724",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "name": "5555  mission_trigger",
+        "label": "5555  mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 720,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3919f80655eeb2fb",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "0c1e5f986169fcb5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "257894861c56b096",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "3919f80655eeb2fb"
+            ]
+        ]
+    },
+    {
+        "id": "0c1e5f986169fcb5",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "6666 mission_trigger",
+        "label": "6666 mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 720,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2f8f2254b28c807a",
+        "type": "modbus-getter",
+        "z": "31f4592eec7b83a9",
+        "name": "MiR_01 Status register",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 440,
+        "y": 460,
+        "wires": [
+            [
+                "c7b4ca08e0364770"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6aaebab0ae1d36f0",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 460,
+        "wires": [
+            [
+                "2f8f2254b28c807a"
+            ]
+        ]
+    },
+    {
+        "id": "c7b4ca08e0364770",
+        "type": "ui-text",
+        "z": "31f4592eec7b83a9",
+        "group": "353f27bed9fe70b4",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Status register:",
+        "label": "Status register:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 700,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a86863884b0235f3",
+        "type": "inject",
+        "z": "31f4592eec7b83a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1010",
+        "payloadType": "num",
+        "x": 550,
+        "y": 100,
+        "wires": [
+            [
+                "2a425ae33a811159",
+                "a12d7d7629578425",
+                "cf2926bc81da04ec",
+                "3f6c2cef479fe8fa",
+                "ad51b33a11a07724",
+                "0c1e5f986169fcb5",
+                "c7b4ca08e0364770"
+            ]
+        ]
+    },
+    {
+        "id": "674d5e3318824c0c",
+        "type": "modbus-getter",
+        "z": "f61fd2cc3bb17a4f",
+        "name": "UR10 mission_triggers",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "0b336b7238ca1e21"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "067e0073e4637dfc",
+        "type": "inject",
+        "z": "f61fd2cc3bb17a4f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "674d5e3318824c0c"
+            ]
+        ]
+    },
+    {
+        "id": "0b336b7238ca1e21",
+        "type": "ui-text",
+        "z": "f61fd2cc3bb17a4f",
+        "group": "b35a0a3a1b43be62",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "mission_trigger",
+        "label": "Mission_trigger:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": true,
+        "className": "",
+        "x": 700,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "274f2e37a0523173",
+        "type": "modbus-getter",
+        "z": "f61fd2cc3bb17a4f",
+        "name": "UR10 Status register",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "caa506eb13b3783f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "52091d8b62a1ae9c",
+        "type": "inject",
+        "z": "f61fd2cc3bb17a4f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "274f2e37a0523173"
+            ]
+        ]
+    },
+    {
+        "id": "caa506eb13b3783f",
+        "type": "ui-text",
+        "z": "f61fd2cc3bb17a4f",
+        "group": "b35a0a3a1b43be62",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Status register:",
+        "label": "Status register:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "177bba078e5213e3",
+        "type": "inject",
+        "z": "f61fd2cc3bb17a4f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1010",
+        "payloadType": "num",
+        "x": 550,
+        "y": 60,
+        "wires": [
+            [
+                "0b336b7238ca1e21",
+                "caa506eb13b3783f"
+            ]
+        ]
+    },
+    {
+        "id": "967a76835085c5e6",
+        "type": "modbus-write",
+        "z": "e5ec0dd13ebf04ca",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a514b6214153a1f1",
+        "type": "ui-button",
+        "z": "e5ec0dd13ebf04ca",
+        "group": "84886b3a388e29f3",
+        "name": "UR10> COMPLTED",
+        "label": "UR10> COMPLTED",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "967a76835085c5e6"
+            ]
+        ]
+    },
+    {
+        "id": "8ded41b9d04e4e9b",
+        "type": "modbus-write",
+        "z": "e5ec0dd13ebf04ca",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1ddffaae3a5bde12",
+        "type": "ui-button",
+        "z": "e5ec0dd13ebf04ca",
+        "group": "84886b3a388e29f3",
+        "name": "UR10> IDLE",
+        "label": "UR10> IDLE",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "8ded41b9d04e4e9b"
+            ]
+        ]
+    },
+    {
+        "id": "b8e56851aef38ddb",
+        "type": "modbus-write",
+        "z": "e5ec0dd13ebf04ca",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "732a4b81f79049d4",
+        "type": "ui-button",
+        "z": "e5ec0dd13ebf04ca",
+        "group": "b35a0a3a1b43be62",
+        "name": "UR5> COMPLTED",
+        "label": "UR5> COMPLTED",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "b8e56851aef38ddb"
+            ]
+        ]
+    },
+    {
+        "id": "98905b67bacfdd91",
+        "type": "modbus-write",
+        "z": "e5ec0dd13ebf04ca",
+        "name": "MiR_01 go_to_part_table",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f25a9378dd1f9a51",
+        "type": "ui-button",
+        "z": "e5ec0dd13ebf04ca",
+        "group": "b35a0a3a1b43be62",
+        "name": "UR5> IDLE",
+        "label": "UR5> IDLE",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "98905b67bacfdd91"
+            ]
+        ]
+    },
+    {
+        "id": "5ba9aae0dbdcc147",
+        "type": "modbus-getter",
+        "z": "5c0316a5fa0522f2",
+        "name": "MiR_01 Status register",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "3dda681fa78ea922"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e2ae3faf9ed02df2",
+        "type": "inject",
+        "z": "5c0316a5fa0522f2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "5ba9aae0dbdcc147"
+            ]
+        ]
+    },
+    {
+        "id": "3dda681fa78ea922",
+        "type": "ui-gauge",
+        "z": "5c0316a5fa0522f2",
+        "name": "",
+        "group": "1dfae768e770aa89",
+        "order": 1,
+        "width": "3",
+        "height": "2",
+        "gtype": "gauge-battery",
+        "gstyle": "needle",
+        "title": "MiR_01",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "45f07824a83ffe93",
+        "type": "modbus-getter",
+        "z": "5c0316a5fa0522f2",
+        "name": "MiR_01 Status register",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "",
+        "dataType": "Coil",
+        "adr": "1035",
+        "quantity": "1",
+        "server": "5eb5565db599c46b",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "4ca8e96c97665370"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "26ce3088bbfddb33",
+        "type": "inject",
+        "z": "5c0316a5fa0522f2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "45f07824a83ffe93"
+            ]
+        ]
+    },
+    {
+        "id": "4ca8e96c97665370",
+        "type": "ui-gauge",
+        "z": "5c0316a5fa0522f2",
+        "name": "",
+        "group": "1dfae768e770aa89",
+        "order": 2,
+        "width": "3",
+        "height": "2",
+        "gtype": "gauge-battery",
+        "gstyle": "needle",
+        "title": "MiR_02",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 800,
+        "y": 200,
+        "wires": []
+    }
+]
